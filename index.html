@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.32/build/spline-viewer.js"></script> -->
+    <script
+      type="module"
+      src="https://unpkg.com/@splinetool/viewer@1.9.32/build/spline-viewer.js"
+    ></script>
+    <title>GYMBro</title>
+  </head>
+  <body>
+    <a href="#" id="backToTop"><i class='bx bx-chevrons-left'></i></a>
+    <!-- Header Start -->
+    <header>
+      <nav id="#topPage">
+        <h1>GYM<span>Bro</span></h1>
+        <button id="open"><i class="bx bx-menu"></i></button>
+        <div id="linkCon">
+          <ul>
+            <button id="close"><i class="bx bx-x"></i></button>
+            <li><a href="#bmiSEC">BMI</a></li>
+            <li><a href="#gallerySEC">Gallery</a></li>
+            <li><a href="#exerciseSEC">Exercises</a></li>
+            <li><a href="#faqsSEC">FAQs</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- Header End -->
+    <!-- Slider Starts -->
+    <section class="slider">
+      <button id="leftBtn"><i class="bx bxs-left-arrow"></i></button>
+      <button id="rightBtn"><i class="bx bxs-right-arrow"></i></button>
+
+      <div class="general-div show">
+        <img
+          src="./assets/images/wp12047630-gym-pc-wallpapers.jpg"
+          alt="GymBro"
+        />
+        <div class="information">
+          <h2>
+            TIME<br />
+            TO DO <span>EXERCISE</span>
+          </h2>
+          <p>
+            Best BodyBuilding platform to train yourself mentall and phisycally.
+            we also provide best services for you to build your body healthy and
+            enjoyable
+          </p>
+        </div>
+      </div>
+
+      <div class="general-div">
+        <img src="./assets/images/uwp4528455.jpeg" alt="GymBro" />
+        <div class="information">
+          <h2>
+            NEVER<br />
+            IS TOO <span>LATE</span>
+          </h2>
+          <p>
+            Never Lose you HOPE. At any age you can start doing exercise and
+            build your body.
+          </p>
+        </div>
+      </div>
+
+      <div class="general-div">
+        <img
+          src="./assets/images/wp12047778-gym-pc-wallpapers.jpg"
+          alt="GymBro"
+        />
+        <div class="information">
+          <h2>
+            TIME<br />
+            TO BE <span>DIFFRENT</span>
+          </h2>
+          <p>
+            We prepare the best mentors in the world for you and even you can do
+            exercise in your home.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Slider Ends -->
+
+    <!-- Advertizement section Strats -->
+    <section class="ad-container">
+      <div>
+        <h2>24/7</h2>
+        <p>SUPPORT</p>
+      </div>
+      <div>
+        <h2>+40</h2>
+        <p>EXERCISES</p>
+      </div>
+      <div>
+        <h2>BMI</h2>
+        <p>CALCULATOR</p>
+      </div>
+      <div>
+        <h2>FAQs</h2>
+        <p>QUESTIONS</p>
+      </div>
+    </section>
+    <!-- Advertizement section Strats -->
+
+    <!-- 3D part Starts Here -->
+    <section class="sec">
+      <div class="three-d">
+        <img src="./assets/images/icons8-rhombus-loader.gif" alt="Loading">
+        <spline-viewer class='timer' url="https://prod.spline.design/GsVV1qTQKVYhouEy/scene.splinecode"></spline-viewer>
+      </div>
+      <div class="qoute">
+        <img
+          src="./assets/images/wp2600430-muhammad-ali-wallpaper-hd.jpg"
+          alt="Mohammad Ali Kley"
+        />
+        <h2>
+          I hated Every minute of training,but I said,"DON'T QUIT.SUFFER NOW AND
+          LIVE THE REST OF YOUR LIFE AS A CHAMPION" <span>MohammadAli Kley</span>
+        </h2>
+      </div>
+    </section>
+    <!-- 3D part Ends Here -->
+
+     <!-- BMI calculator Start -->
+      <section class="bmi-con" id="bmiSEC">
+        <div class="cal-con">
+          <form action="#" id="formEl">
+            <input id="age" type="text" placeholder="Age:">
+            <input id="hieght" type="text" placeholder="Hieght:'m'">
+            <input id="wieght" type="text" placeholder="Wieght:'kg'">
+            <button type="submit" id="subBtn">Submit</button>
+          </form>
+          <button id="resetBtn"><i class='bx bx-reset'></i></button>
+
+        </div>
+        <div class="result-con">
+          <table>
+            <thead>
+              <th>BMI</th>
+              <th>Wieght Status</th>
+            </thead>
+            <tbody>
+              <td id="underw">Below 18.5</td>
+              <td id="underw">Underwieght</td>
+              
+            </tbody>
+
+            <tbody>
+              <td id="normal">18.5-24.9</td>
+              <td id="normal">Normal</td>
+            </tbody>
+
+            <tbody>
+              <td id="overw">25-29.9</td>
+              <td id="overw">Overwieght</td>
+            </tbody>
+
+            <tbody>
+              <td id="obese">30 and Above</td>
+              <td id="obese">Obese</td>
+            </tbody>
+          </table>
+        </div>
+      </section>
+     <!-- BMI calculator Ends -->
+      <!-- Gallery Starts -->
+       <section class="gallery-sec" id="gallerySEC">
+        <div class="gallery-header">
+            <h2>Gallery</h2>
+            <div id="gal-btns">
+              <button class="allpics">All</button>
+              <button class="calpics">Calithenics</button>
+              <button class="motpics">Motivational</button>
+            </div>
+        </div>
+        <div class="gallery-pic">
+          <div id="img1">
+            <a href="https://wallpapercave.com/download/gym-motivation-wallpapers-wp5503761">
+              <img  src="./assets/images/mot-4.jpg" alt="Calithenics">
+            </a>
+          </div>
+
+          <div id="img2">
+            <a href="https://wallpapercave.com/download/gym-motivation-wallpapers-wp5503733">
+              <img  src="./assets/images/mot-3.jpg" alt="Calithenics">
+            </a>
+          </div>
+
+          <div id="img3">
+            <a href="https://wallpapercave.com/download/wallpaper-motivation-wp3375673">
+              <img  src="./assets/images/mot-1.jpg" alt="Calithenics">
+            </a>
+          </div>
+
+          <div id="img4">
+            <a href="https://wallpapercave.com/download/wallpapers-de-gimnasio-wp3586860">
+              <img  src="./assets/images/mot-2.jpg" alt="Calithenics">
+            </a>
+          </div>
+        </div>
+        <h3>CLICK TO DOWNLOAD THE PICTURES</h3>
+       </section>
+      <!-- Gallery Ends -->
+
+      <!-- Exercise Search Starts -->
+       <section class="exe-sec" id="exerciseSEC">
+        <div class="exercise-header">
+          <select name="bodyPart" id="bodyPart">
+            <option value="back">Back</option>
+            <option value="cardio">Cardio</option>
+            <option value="chest">Chest</option>
+            <option value="lower arms">Lower-Arm</option>
+            <option value="lower legs">Lower-Legs</option>
+            <option value="neck">Neck</option>
+            <option value="shoulders">Shoulders</option>
+            <option value="upper arms">Upper Arms</option>
+            <option value="upper legs">Upper Legs</option>
+            <option value="waist">Waist</option>
+          </select>
+          <button id="searchE">Search</button>
+        </div>
+        <div class="cards">
+          
+        </div>
+       </section>
+      <!-- Exercise Search Ends -->
+      <!-- FAQs Starts-->
+       <section class="faqs" id="faqsSEC">
+        <h2>FAQs</h2>
+        <div class="question-1">
+          <div>
+            <h2>1- How much calley should I use everyday?</h2>
+            <button id="togBtn" class="togBtn"><i class='bx bx-x'></i></button>
+          </div>
+          <p id="answer" class="answer">Females between 19-30 : 2400 <br> between 31-60:2200 <br> Males  between 19-30:3000 <br> between 31-60 :3000 </p>
+        </div>
+        <div class="question-1">
+          <div>
+            <h2>2- What should I eat to gain muscles?</h2>
+            <button id="togBtn" class="togBtn"><i class='bx bx-x'></i></button>
+          </div>
+          <p id="answer" class="answer">1.Eggs with milk <br> 2.Chunk light tuna <br> 3.Chicken breast <br>4.Peanut Butter </p>
+        </div>
+        <div class="question-1">
+          <div>
+            <h2>3- How much should I do exercise everyday?</h2>
+            <button id="togBtn" class="togBtn"><i class='bx bx-x'></i></button>
+          </div>
+          <p id="answer" class="answer">You can do strength training by using weight machines or weights, your own body weight, heavy bags or resistance bands. You also can use resistance paddles in the water or do activities such as rock climbing. As a general goal, aim for at least 30 minutes of moderate physical activity every day </p>
+        </div>
+        <div class="question-1">
+          <div>
+            <h2>4- How much should I sleep in 24hours</h2>
+            <button id="togBtn" class="togBtn"><i class='bx bx-x'></i></button>
+          </div>
+          <p id="answer" class="answer">Experts recommend that adults sleep between 7 and 9 hours a night. Adults who sleep less than 7 hours a night may have more health issues than those who sleep 7 or more hours a night. </p>
+        </div>
+       </section>
+      <!-- FAQs Ends-->
+
+      <!-- Footer Starts -->
+       <footer>
+        <div class="foot-links">
+          <h1>GYM<span>Bro</span></h1>
+          <a href="#bmiSEC">BMI</a>
+          <a href="#gallerySEC">Gallery</a>
+          <a href="#faqsSEC">FAQs</a>
+          <a href="#exerciseSEC">Exercise</a>
+        </div>
+        <div class="social-media">
+          <a href="https://t.me/MahdiHhashemii" id="teg"><i class='bx bxl-telegram' ></i></a>
+          <a href="mailto:mahdi1389hashemi@Gmail.com" id="email"><i class='bx bxs-envelope' ></i></a>
+          <a href="#" id="github"><i class='bx bxl-github'></i></a>
+        </div>
+       </footer>
+      <!-- Footer Ends -->
+
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
